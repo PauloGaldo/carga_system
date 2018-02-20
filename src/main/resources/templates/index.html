@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="ng-system-carga">
+    <head>
+        <title>System</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <base data-th-href="${#httpServletRequest.getContextPath() + '/'}" />        
+
+        <link rel="stylesheet" data-th-href="@{/static/css/ext/bootstrap.min.css}"/>
+        <link rel="stylesheet" data-th-href="@{/static/css/main.css}"/>
+
+        <link rel="stylesheet" data-th-href="@{/static/css/ext/ng-table.min.css}"/>
+        <link rel="stylesheet" data-th-href="@{/static/css/ext/ngDialog-theme-default.css}"/>
+        <link rel="stylesheet" data-th-href="@{/static/css/ext/ngDialog.css}"/>
+        <link rel="stylesheet" data-th-href="@{/static/css/ext/toaster.css}"/>
+        <link rel="stylesheet" data-th-href="@{/static/css/ext/loading-bar.min.css}"/>
+
+        <script data-th-src="@{/static/js/ext/xlsx-populate.js}"></script>
+        <script data-th-src="@{/static/js/ext/jquery-3.2.1.min.js}"></script>
+        <script data-th-src="@{/static/js/ext/bootstrap.min.js}"></script>
+
+        <script data-th-src="@{/static/js/ext/angular.min.js}"></script>
+        <script data-th-src="@{/static/js/ext/angular-animate.min.js}"></script>
+        <script data-th-src="@{/static/js/ext/angular-messages.min.js}"></script>
+        <script data-th-src="@{/static/js/ext/angular-ui-router.min.js}"></script>
+        <script data-th-src="@{/static/js/ext/ng-table.min.js}"></script>
+        <script data-th-src="@{/static/js/ext/ngDialog.js}"></script>
+        <script data-th-src="@{/static/js/ext/toaster.min.js}"></script>        
+        <script data-th-src="@{/static/js/ext/loading-bar.min.js}"></script>
+        
+        <script data-th-src="@{/static/app/app.module.js}"></script>
+        <script data-th-src="@{/static/app/app.config.js}"></script>
+        <script data-th-src="@{/static/app/app.controller.js}"></script>
+
+    </head>
+    <body>
+        <div ui-view="body"></div>
+    </body>
+</html>
